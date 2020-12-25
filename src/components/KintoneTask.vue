@@ -38,7 +38,9 @@ export default {
     const url = "/k/v1/record.json";
     const {data} = await axios.get(url, {
       app: XXXXX
-    });
+    }, {headers: {
+      "X-Requested-With": "XMLHttpRequest"
+    }});
     this.task = JSON.parse(data).records.map(ele => {
       const obj = {
         type: ele.type.value,
