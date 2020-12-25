@@ -1,0 +1,41 @@
+{
+  "name": "BBPicker",
+  "version": "2.0.0",
+  "manifest_version": 2,
+  "description": "SC日報用",
+  "permissions": [
+    "storage",
+    "background",
+    "contextMenus",
+    "activeTab",
+    "https://bozuman.cybozu.com/*",
+    "https://bozuman.s.cybozu.com/*",
+    "https://ryotake.cybozu.com/*",
+    "https://*.amazonaws.com/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "https://bozuman.cybozu.com/*",
+      "https://bozuman.s.cybozu.com/*",
+      "https://ryotake.cybozu.com/*"
+    ],
+    "js": [
+      "dist/js/app.js",
+      "dist/js/chunk-vendors.js"
+    ]
+  }],
+  "background": {
+    "matches": [
+      "https://bozuman.cybozu.com/*",
+      "https://bozuman.s.cybozu.com/*",
+      "https://ryotake.cybozu.com/*"
+    ],
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "BBPicker",
+    "default_popup": "popup/popup.html"
+  }
+}
