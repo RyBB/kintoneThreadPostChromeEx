@@ -35,9 +35,10 @@ export default {
     }
   },
   async mounted() {
-    const url = "/k/v1/record.json";
+    const url = "/k/v1/records.json";
     const {data} = await axios.get(url, {
-      app: XXXXX
+      app: XXXXX,
+      query: 'status not in ("完了", "中止", "延期") or 更新日時 = TODAY() order by deadline asc, status asc, triage asc, maintitle asc limit 100'
     }, {headers: {
       "X-Requested-With": "XMLHttpRequest"
     }});
