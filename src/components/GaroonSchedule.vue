@@ -67,21 +67,17 @@ export default {
           return "blue";
         // 水色
         case "来訪":
-        case "取材/講演":
-        case "【履歴】来訪":
           return "wblue";
         // オレンジ
         case "出張":
         case "ウルトラワーク":
           return "orange";
         // 赤
-        case "副業":
         case "複業":
         case "休み":
           return "red";
         // ピンク
         case "往訪":
-        case "【履歴】往訪":
           return "pink";
         // 紫
         case "面接":
