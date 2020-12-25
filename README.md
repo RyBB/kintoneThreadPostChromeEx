@@ -1,29 +1,3 @@
-# vue-ver2
+# kintoneのスレッド投稿がスマートになるChrome拡張をVue.jsで作る
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+🎄こちらは [kintone Advent Calendar 2020](https://qiita.com/advent-calendar/2020/kintone) 25日目の記事のソースコードです🎅
