@@ -35,7 +35,7 @@ export default {
     }
   },
   async mounted() {
-    const url = "https://15fr6ija4d.execute-api.ap-northeast-1.amazonaws.com/default/BB-getTask";
+    const url = "XXXXX";
     const {data} = await axios.get(url);
     this.task = JSON.parse(data).records.map(ele => {
       const obj = {
