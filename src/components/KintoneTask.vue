@@ -35,8 +35,10 @@ export default {
     }
   },
   async mounted() {
-    const url = "XXXXX";
-    const {data} = await axios.get(url);
+    const url = "/k/v1/record.json";
+    const {data} = await axios.get(url, {
+      app: XXXXX
+    });
     this.task = JSON.parse(data).records.map(ele => {
       const obj = {
         type: ele.type.value,
