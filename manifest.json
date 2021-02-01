@@ -8,16 +8,9 @@
     "background",
     "contextMenus",
     "activeTab",
-    "https://bozuman.cybozu.com/*",
-    "https://bozuman.s.cybozu.com/*",
-    "https://ryotake.cybozu.com/*",
-    "https://*.amazonaws.com/*"
   ],
   "content_scripts": [{
     "matches": [
-      "https://bozuman.cybozu.com/*",
-      "https://bozuman.s.cybozu.com/*",
-      "https://ryotake.cybozu.com/*"
     ],
     "js": [
       "dist/js/app.js",
@@ -26,9 +19,6 @@
   }],
   "background": {
     "matches": [
-      "https://bozuman.cybozu.com/*",
-      "https://bozuman.s.cybozu.com/*",
-      "https://ryotake.cybozu.com/*"
     ],
     "scripts": [
       "src/background.js"
